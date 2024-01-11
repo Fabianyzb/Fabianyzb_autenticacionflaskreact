@@ -14,7 +14,7 @@ export const Private = () => {
   useEffect(() => {
 	const gettingInfo = async () => {
 		const response = await fetch(
-		  "https://andresmedtr-humble-space-chainsaw-g9wvxp446jr2w4rq-3001.preview.app.github.dev/private",
+		  "https://didactic-space-orbit-vjj5v7px5qqf6gw4-3001.app.github.dev/private",
 		  {
 			method: "GET",
 			headers: {

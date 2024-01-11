@@ -11,7 +11,7 @@ export const Login = () => {
 
   const loginUser = async () => {
     const response = await fetch(
-      "https://andresmedtr-humble-space-chainsaw-g9wvxp446jr2w4rq-3001.preview.app.github.dev/login",
+      "https://didactic-space-orbit-vjj5v7px5qqf6gw4-3001.app.github.dev/login",
       {
         method: "POST",
         headers: {
@@ -53,7 +53,7 @@ export const Login = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label for="floatingInput">Email address</label>
+          <label htmlForfor="floatingInput">Email address</label>
         </div>
         <div className="form-floating">
           <input
@@ -64,7 +64,7 @@ export const Login = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <label for="floatingPassword">Password</label>
+          <label htmlForFor="floatingPassword">Password</label>
         </div>
         <button className="btn btn-success">Login</button>
       </form>

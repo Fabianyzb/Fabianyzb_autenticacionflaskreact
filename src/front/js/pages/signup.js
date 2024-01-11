@@ -11,11 +11,10 @@ export const Signup = () => {
 
   console.log("Password", password, "Email:", email);
 
-  // email, password, enpoint URL "https://andresmedtr-humble-space-chainsaw-g9wvxp446jr2w4rq-3001.preview.app.github.dev/register"
 
   const registerUser = async () => {
     const response = await fetch(
-      "https://andresmedtr-humble-space-chainsaw-g9wvxp446jr2w4rq-3001.preview.app.github.dev/register",
+      "https://didactic-space-orbit-vjj5v7px5qqf6gw4-3001.app.github.dev/register",
       {
         method: "POST",
         headers: {
@@ -55,7 +54,7 @@ export const Signup = () => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
-          <label for="floatingInput">Email address</label>
+          <label htmlFor="floatingInput">Email address</label>
         </div>
         <div className="form-floating">
           <input
@@ -66,7 +65,7 @@ export const Signup = () => {
             value={password}
             onChange={(e) => setPassword(e.target.value)}
           />
-          <label for="floatingPassword">Password</label>
+          <label htmlFor="floatingPassword">Password</label>
         </div>
         <button className="btn btn-success">Register</button>
       </form>
