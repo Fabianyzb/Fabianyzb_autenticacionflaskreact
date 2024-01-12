@@ -14,7 +14,7 @@ export const Signup = () => {
 
   const registerUser = async () => {
     const response = await fetch(
-      "https://didactic-space-orbit-vjj5v7px5qqf6gw4-3001.app.github.dev/register",
+      `${process.env.BACKEND_URL}/register`,
       {
         method: "POST",
         headers: {

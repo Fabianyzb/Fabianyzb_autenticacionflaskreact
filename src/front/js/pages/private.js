@@ -14,7 +14,7 @@ export const Private = () => {
   useEffect(() => {
 	const gettingInfo = async () => {
 		const response = await fetch(
-		  "https://didactic-space-orbit-vjj5v7px5qqf6gw4-3001.app.github.dev/private",
+		  `${process.env.BACKEND_URL}/private`,
 		  {
 			method: "GET",
 			headers: {

@@ -11,7 +11,7 @@ export const Login = () => {
 
   const loginUser = async () => {
     const response = await fetch(
-      "https://didactic-space-orbit-vjj5v7px5qqf6gw4-3001.app.github.dev/login",
+      `${process.env.BACKEND_URL}/login`,
       {
         method: "POST",
         headers: {
